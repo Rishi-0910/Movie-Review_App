@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Review App</h1>
+
+        <div class="movie-poster">
+            <!-- Movie Posters -->
+            <div class="movie">
+                <img src="C:\Users\rishi\OneDrive\Desktop\app movie\Movie_imgs\RRR_img.jpg" alt="RRR img">
+                <div class="movie-info">
+                    <div class="movie-title">RRR</div>
+                    <p>Release Date: March 25, 2022.</p>
+                    <p>The film is an anti-colonial fable and buddy drama that revolves around the fictionalized lives of two real-life freedom fighters, Komaram Bheem and Alluri Sitarama Raju, showcasing their struggles against British colonial rule.</p>
+                    <p>Genre: Action</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="C:\Users\rishi\OneDrive\Desktop\app movie\Movie_imgs\arjunreddy_img.jpg" alt="Arjun Reddy img">
+                <div class="movie-info">
+                    <div class="movie-title">Arjun Reddy </div>
+                    <p>Release Date: August 25, 2017.</p>
+                    <p>The film revolves around a hot-headed surgeon dealing with heartbreak and self-destruction, exploring themes of love, anger management, and the consequences of toxic relationships</p>
+                    <p>Genre: Dark romance,medical drama </p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="C:\Users\rishi\OneDrive\Desktop\app movie\Movie_imgs\kanthara_img.jpg"  alt="Kantara img">
+                <div class="movie-info">
+                    <div class="movie-title">Kantara</div>
+                    <p>Release Date: September 30, 2022.</p>
+                    <p>The film explores themes of land encroachment, the conflict between villagers and forest officials, and the cultural significance of nature and tradition in rural India.</p>
+                    <p>Genre: Adventure,Thriller</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="C:\Users\rishi\OneDrive\Desktop\app movie\Movie_imgs\topgun_img.jpg" alt="Top Gun img">
+                <div class="movie-info">
+                    <div class="movie-title">Top Gun</div>
+                    <p>Release Date: May 16, 1986</p>
+                    <p>The film centers around naval aviators at the elite Top Gun training program, exploring themes of competition, camaraderie, and personal growth, while highlighting the intense pressures and challenges faced by fighter pilots.</p>
+                    <p>Genre: Action,Drama</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="C:\Users\rishi\OneDrive\Desktop\app movie\Movie_imgs\dark_img.jpg"  alt="Drak img">
+                <div class="movie-info">
+                    <div class="movie-title">Dark</div>
+                    <p>Release Date:  October 26, 2018</p>
+                    <p>This horror film explores the real horrors of abuse, intertwining themes of trauma and survival, as it delves into the psychological impact of violence and the struggle to overcome one's past.</p>
+                    <p>Genre: Action</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="C:\Users\rishi\OneDrive\Desktop\app movie\Movie_imgs\oppenheimer2_img.jpg" alt="Oppenheimer img">
+                <div class="movie-info">
+                    <div class="movie-title">Oppenheimer</div>
+                    <p>Release Date: July 21, 2023.</p>
+                    <p> The film explores the life of J. Robert Oppenheimer, focusing on his pivotal role in the development of the atomic bomb and the moral complexities surrounding this groundbreaking scientific achievement.</p>
+                    <p>Genre:Biography, Histroical Epic </p>
+                </div>
+            </div>
+        </div>
+
+    
+        <form id="reviewForm">
+            <h2>Submit a Review</h2>
+            <div class="form-group">
+                <label for="movieTitle">Movie Title:</label>
+                <input type="text" id="movieTitle" required aria-label="Movie Title">
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating (1-10):</label>
+                <input type="number" id="rating" min="1" max="10" required aria-label="Rating">
+            </div>
+            <div class="form-group">
+                <label for="review">Review:</label>
+                <textarea id="review" rows="5" required aria-label="Review"></textarea>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <div id="reviewsSection">
+            <h2>Reviews</h2>
+            <ul id="reviewsList"></ul>
+        </div>
+    </div>
+</body>
+</html>  
