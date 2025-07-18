@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review App</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Review App</h1>
+
+        <div class="movie-poster">
+            <!-- Movie Posters -->
+            <div class="movie">
+                <img src="https://www.cinejosh.com/newsimg/newsmainimg/rrr-vies-for-golden-trailer-awards_b_0606231155.jpg" alt="RRR img">
+                <div class="movie-info">
+                    <div class="movie-title">RRR</div>
+                    <p>Release Date: March 25, 2022.</p>
+                    <p>The film is an anti-colonial fable and buddy drama that revolves around the fictionalized lives of two real-life freedom fighters, Komaram Bheem and Alluri Sitarama Raju, showcasing their struggles against British colonial rule.</p>
+                    <p>Genre: Action</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="https://th.bing.com/th/id/OIP.LLwBLfzC9uTrSMZtdHg31QHaJ4?rs=1&pid=ImgDetMain" alt="Arjun Reddy img">
+                <div class="movie-info">
+                    <div class="movie-title">Arjun Reddy </div>
+                    <p>Release Date: August 25, 2017.</p>
+                    <p>The film revolves around a hot-headed surgeon dealing with heartbreak and self-destruction, exploring themes of love, anger management, and the consequences of toxic relationships</p>
+                    <p>Genre: Dark romance,medical drama </p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="https://cdn.123telugu.com/content/wp-content/uploads/2024/10/amaran-m-2.jpg"  alt=" Amaran img">
+                <div class="movie-info">
+                    <div class="movie-title">Amaran</div>
+                    <p>Release Date: October 31, 2024.</p>
+                    <p>Amaran is a gripping biographical war drama centered on the life and ultimate sacrifice of Major Mukund Varadarajan. The film highlights his journey as a dedicated soldier while deeply exploring his emotional bond with his wife, Indhu Rebecca Varghese. Told largely from Indhu’s perspective, the narrative blends personal grief with a sense of national duty.</p>
+                    <p>Genre: Drama,love</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="https://i.ebayimg.com/images/g/TIsAAOSwM0BeM8xZ/s-l1600.jpg" alt="Top Gun img">
+                <div class="movie-info">
+                    <div class="movie-title">Top Gun</div>
+                    <p>Release Date: May 16, 1986</p>
+                    <p>The film centers around naval aviators at the elite Top Gun training program, exploring themes of competition, camaraderie, and personal growth, while highlighting the intense pressures and challenges faced by fighter pilots.</p>
+                    <p>Genre: Action,Drama</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="https://wallpaperaccess.com/full/3627076.png"  alt="Drak img">
+                <div class="movie-info">
+                    <div class="movie-title">Dark</div>
+                    <p>Release Date:  October 26, 2018</p>
+                    <p>This horror film explores the real horrors of abuse, intertwining themes of trauma and survival, as it delves into the psychological impact of violence and the struggle to overcome one's past.</p>
+                    <p>Genre: Action</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="https://cdna.artstation.com/p/assets/images/images/063/096/684/large/william-j-harris-oppenheimer-movie-poster-2023.jpg?1684720979" alt="Oppenheimer img">
+                <div class="movie-info">
+                    <div class="movie-title">Oppenheimer</div>
+                    <p>Release Date: July 21, 2023.</p>
+                    <p> The film explores the life of J. Robert Oppenheimer, focusing on his pivotal role in the development of the atomic bomb and the moral complexities surrounding this groundbreaking scientific achievement.</p>
+                    <p>Genre:Biography, Histroical Epic </p>
+                </div>
+            </div>
+        </div>
+
+    
+        <form id="reviewForm">
+            <h2>Submit a Review</h2>
+            <div class="form-group">
+                <label for="movieTitle">Movie Title:</label>
+                <input type="text" id="movieTitle" required aria-label="Movie Title">
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating (1-10):</label>
+                <input type="number" id="rating" min="1" max="10" required aria-label="Rating">
+            </div>
+            <div class="form-group">
+                <label for="review">Review:</label>
+                <textarea id="review" rows="5" required aria-label="Review"></textarea>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <div id="reviewsSection">
+            <h2>Reviews</h2>
+            <ul id="reviewsList"></ul>
+        </div>
+    </div>
+</body>
+</html>  
